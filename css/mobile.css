@@ -59,13 +59,14 @@ img {
   }
   .business .business-title {
     margin-left: auto;
-        margin-right: auto;
+    margin-right: auto;
     color: var(--secondary-text-color);
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
+    width: 100%;
     
   }
 
@@ -244,6 +245,8 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px 16px ;
+
+  
  
 }
 .customers-icon {
@@ -257,11 +260,16 @@ img {
 .customers-list li{
   width: 190px;
   height: 88px;
+
+ 
 }
 
 .customers-link {
+
+ 
   width: 100%;
   height: 100%;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,6 +295,166 @@ img {
 
 /* ================customers-section============== */
 
+/* ==============foter==================== */
+.foter{
+  padding: 96px 0;
+  background: var(--title-text-color);
+
+}
+.foter-container{
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.foter-logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  color: var(--button-bg-color);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.foter .color {
+  color: var(--footer-text-color);
+}
+.foter-description {
+  text-align: left;
+ 
+  color: var(--footer-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.foter-icons-title {
+  color: var(--white-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  text-align: center;
+} 
+
+/* ===icons foter== */
+.foter-icons-list {
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foter-icons-item {
+  width: 40px;
+  height: 40px;
+}
+.foter-icons-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-text-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foter-icons {
+  width: 24px;
+  height: 24px;
+  fill: var(--footer-text-color);
+}
+.foter-icons-link:hover,
+.foter-icons-link:focus {
+  background-color: #31d0aa;
+} 
+/* ====foret form=== */
+ .foter-form {
+  display: flex;
+  flex-direction: column;
+}
+.foter-form-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-text-color);
+
+  margin-bottom: 16px;
+}
+.foter-form-input {
+  background: var(--title-text-color);
+  border: 1px solid #ffffff;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  padding: 8px 16px;
+  
+  color: var(--white-text-color);
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+.foter-form-input:focus{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+}
+.foter-form-input::placeholder {
+  color: var(--white-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  opacity: 0.6;
+}
+.foter-button-icon {
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 117px;
+  fill: var(--white-text-color);
+} 
+.foter-form-button {
+  margin: 0 auto;
+  position: relative;
+  width: 165px;
+
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-text-color);
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  
+  line-height: 1.5;
+
+  padding: 8px 0;
+  padding-left: 24px;
+
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foter-form-button:hover,
+.foter-form-button:focus {
+  background-color: var(--accent_color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* ==============foter==================== */
 
 /* =================max-width=============/ */
 
@@ -301,21 +469,24 @@ img {
   @media screen and (min-width:428px ) {
     .container{
         width: 426px ;
+        margin: 0 auto;
+    
 
     
     }
+    .business{
+      padding: 112px 0;
+    }
 
-    .business .business-title{
-        width: 320px;
-        font-size: 36px;
-        
-        margin-bottom: 36px;
 
-     }
+    .customers-list li{
+      width: 190px;
+      height: 88px;
+} 
     
-    
-  }
   
+
+}
   /* =========================phone===================== */
 
 
@@ -323,6 +494,7 @@ img {
   @media screen and (min-width: 768px ) {
     .container{
         width: 766px ;
+      
     
     }
     .business .business-title{
@@ -348,8 +520,7 @@ img {
     .work-list-items .title{
       text-align: left;
     }
-    
-
+  
 /* ============section firs============= */
 
 
@@ -372,10 +543,51 @@ img {
   .customers-list{
     gap: 72px 24px;
   }
+  .customers-icon {
+  width: 104px;
+  height: 56px;
+ }
 
-    /* ===============section customers=========== */
+ /* ==========foter=========== */
+ .foter-container{
+  padding-left: 108px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 0;
+ 
+ }
+ .foter-logo{
+  text-align: left;
+ }
 
-  }
+ .foter-logo-wrapper{
+  width: 264px;
+  margin-right: 24px;
+ }
+ .foter-icons-title{
+  text-align: left;
+ }
+
+ .foter-form{
+  display: flex;
+  flex-direction: row;
+ 
+ }
+ .foter-form-input{
+  width: 264px;
+  margin-right: 24px;
+  margin-bottom: 0;
+ }
+ 
+
+  /* ==========foter=========== */
+  
+
+
+
+
+
+}
   /* =========================tablet fiunish===================== */
 
 
@@ -383,7 +595,8 @@ img {
 
   @media screen and (min-width: 1158px ) {
     .container{
-        width: 1158px; ;
+        width: 1158px; 
+        
     }
     .business {
       max-width: 1440px;
@@ -546,6 +759,28 @@ img {
 }
 
   /* ===============section customers=========== */
+
+  /* ==============foter============== */
+  .foter{
+    padding: 100px 0;
+  }
+  .foter-container{
+    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 0;
+   
+   }
+
+   .foter-logo-wrapper{
+    
+    margin-right: 120px;
+   }
+   .foter-icon-wrapper{
+    margin-right: 80px;
+   }
+  
+   /* ==============foter============== */
     
   }
    /* =========================desct fiunish===================== */

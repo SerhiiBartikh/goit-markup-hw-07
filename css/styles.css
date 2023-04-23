@@ -333,7 +333,7 @@ img {
 } */
 
 /* --------------foter icons */
-.foter-icons-list {
+/* .foter-icons-list {
   gap: 24px;
   display: flex;
   justify-content: center;
@@ -365,7 +365,7 @@ img {
 .foter-icons-link:hover,
 .foter-icons-link:focus {
   background-color: #31d0aa;
-}
+} */
 
 /* title h2 */
 /* .section-title {
@@ -629,7 +629,7 @@ img {
 }
 
 /* footer */
-.foter-container {
+/* .foter-container {
   display: flex;
 }
 
@@ -641,11 +641,11 @@ img {
   margin-right: 80px;
 }
 
-.footer {
+.foter {
   background: var(--title-text-color);
   padding: 100px 0 100px 0;
 }
-.footer-logo {
+.foter-logo {
   display: block;
   font-family: "Raleway", sans-serif;
   color: var(--button-bg-color);
@@ -659,11 +659,11 @@ img {
   margin-bottom: 16px;
 }
 
-.footer .color {
+.foter .color {
   color: var(--footer-text-color);
 }
 
-.footer-description {
+.foter-description {
   max-width: 264px;
   color: var(--footer-text-color);
   font-size: 16px;
@@ -677,7 +677,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-}
+} */
 
 /* ================= back drop============ */
 
@@ -904,7 +904,7 @@ img {
 
 /* =========================foter form-===================== */
 
-.foter-form {
+/* .foter-form {
   display: flex;
 }
 .foter-form-text {
@@ -924,7 +924,7 @@ img {
 
   
   
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   margin-right: 24px;
@@ -962,7 +962,7 @@ img {
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
-  /* margin: 0 auto; */
+
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -987,4 +987,4 @@ img {
   transform: translateY(-50%);
   left: 117px;
   fill: var(--white-text-color);
-}
+} */
