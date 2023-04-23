@@ -1,0 +1,113 @@
+.container{
+   
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.business {
+    width: 100%;
+    padding: 112px 54px ;
+    margin: 0 auto;
+    /* background: var(--title-text-color); */
+    background-color: black;
+ 
+    /* background-size: cover; */
+   
+  }
+  .business .business-title {
+    margin-left: auto;
+        margin-right: auto;
+    color: var(--secondary-text-color);
+    font-size: 32px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+    
+  }
+
+  .business .button {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 22px;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .button:focus {
+    background-color: var(--accent_color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  }
+
+
+
+/* =========================phone===================== */
+  @media screen and (min-width:428px ) {
+    .container{
+        width: 426px ;
+
+    
+    }
+
+    .business .business-title{
+        width: 320px;
+        font-size: 36px;
+        
+        margin-bottom: 36px;
+
+     }
+    
+    
+  }
+  
+  /* =========================phone===================== */
+
+
+/* =========================tablet===================== */
+  @media screen and (min-width: 768px ) {
+    .container{
+        width: 766px ;
+    
+    }
+    .business .business-title{
+       width: 496px;
+       margin: 0 auto;
+       font-size: 56px;
+       line-height: 1.07;
+       margin-bottom: 36px;
+    }
+    
+  }
+
+
+  /* =========================tablet fiunish===================== */
+
+
+    /* =========================desctop===================== */
+
+  @media screen and (min-width: 1158px ) {
+    .container{
+        width: 1158px; ;
+    }
+
+    .business .business-title{
+        margin-bottom: 42px;
+    }
+
+    
+  }
+   /* =========================desct fiunish===================== */
