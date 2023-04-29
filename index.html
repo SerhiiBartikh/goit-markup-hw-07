@@ -25,11 +25,11 @@
                 <a class="logo link" target="_blank" rel="noopener noreferrer nofollow" href="./index.html">
                     Web<span class="color">Studio</span>
                 </a>
-                <div class="mobile-burger">
+                <button class="mobile-burger" data-mobile-open>
                     <svg class="mobile-burger-icon" width="32" height="22">
                         <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger" ></use>
                     </svg>
-                </div>
+                </button>
                 <ul class="site-nav list">
                     <li>
                         <a class="nav-link nav-link-active link" href="./index.html">Studio</a>
@@ -55,14 +55,19 @@
             </address>
     
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu is-hidden" data-mobile>
             <div class="mobile-container">
+                <button class="mobile-close-button" type="button" data-mobile-close>
+                    <svg class="mobile-close-icon" width="8" height="8" >
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
                 <ul class="mobile-list list">
-                    <li class="mobile-item">
-                        <a class="mobile-link link" href="">Studio</a>
+                    <li class="mobile-item mobile-link-active">
+                        <a class="mobile-link mobile-link-active link" href="./index.html">Studio</a>
                     </li>
                     <li class="mobile-item">
-                        <a class="mobile-link link" href="">Portfolio</a>
+                        <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="mobile-item">
                         <a class="mobile-link link" href=""> Contacts</a>
@@ -80,28 +85,28 @@
                      
                  </ul>
                  <ul class="mobile-icon-list list" >
-                     <li class="list">
+                     <li class="mobile-icon-items">
                          <a class="mobile-icons-link" href="">
                              <svg class="mobile-link-icon" width="24" height="24">
                                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
                              </svg>
                          </a>
                      </li>
-                     <li class="list">
+                     <li class="mobile-icon-items">
                          <a class="mobile-icons-link"  href="">
                              <svg class="mobile-link-icon" width="24" height="24">
                                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                              </svg>
                          </a>
                      </li>
-                     <li class="list">
+                     <li class="mobile-icon-items">
                          <a class="mobile-icons-link" href="">
                              <svg class="mobile-link-icon" width="24" height="24">
                                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                              </svg>
                          </a>
                      </li>
-                     <li class="list">
+                     <li class="mobile-icon-items">
                          <a class="mobile-icons-link" href="">
                              <svg class="mobile-link-icon" width="24" height="24">
                                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
@@ -581,8 +586,9 @@
             </form>
         </div>
     </div>
-
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module"  src="./js/mobile-menu.js"></script>
+    
 </body>
 
 </html>
