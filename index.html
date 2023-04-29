@@ -18,13 +18,18 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
 
         <div class="header-page container">
             <nav class="header-navigation">
                 <a class="logo link" target="_blank" rel="noopener noreferrer nofollow" href="./index.html">
                     Web<span class="color">Studio</span>
                 </a>
+                <div class="mobile-burger">
+                    <svg class="mobile-burger-icon" width="32" height="22">
+                        <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger" ></use>
+                    </svg>
+                </div>
                 <ul class="site-nav list">
                     <li>
                         <a class="nav-link nav-link-active link" href="./index.html">Studio</a>
@@ -50,9 +55,67 @@
             </address>
     
         </div>
+        <div class="mobile-menu">
+            <div class="mobile-container">
+                <ul class="mobile-list list">
+                    <li class="mobile-item">
+                        <a class="mobile-link link" href="">Studio</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a class="mobile-link link" href="">Portfolio</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a class="mobile-link link" href=""> Contacts</a>
+                    </li>
+                </ul>
+
+               <div class="mobile-wrapper">
+                 <ul class="mobile-address">
+                     <li class="mobile-phone-list list"> 
+                         <a class="mobile-phone-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                     </li>
+                     <li  class="list">
+                         <a class="mobile-mail-link  link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                     </li>
+                     
+                 </ul>
+                 <ul class="mobile-icon-list list" >
+                     <li class="list">
+                         <a class="mobile-icons-link" href="">
+                             <svg class="mobile-link-icon" width="24" height="24">
+                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                             </svg>
+                         </a>
+                     </li>
+                     <li class="list">
+                         <a class="mobile-icons-link"  href="">
+                             <svg class="mobile-link-icon" width="24" height="24">
+                                 <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                             </svg>
+                         </a>
+                     </li>
+                     <li class="list">
+                         <a class="mobile-icons-link" href="">
+                             <svg class="mobile-link-icon" width="24" height="24">
+                                 <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                             </svg>
+                         </a>
+                     </li>
+                     <li class="list">
+                         <a class="mobile-icons-link" href="">
+                             <svg class="mobile-link-icon" width="24" height="24">
+                                 <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                             </svg>
+                         </a>
+                     </li>
+                 </ul>
+               </div>
+            </div>
+
+        </div>
 
 
-    </header> -->
+    </header>
 
     <main>
         <section class="business">
@@ -126,13 +189,30 @@
                 <h2 class="section-title">What are we doing</h2>
                 <ul class="job-list list">
                     <li >
-                        <img src="./images/pc.jpg" alt="pc" width="360">
+                        <picture>
+                            <source 
+                            srcset="./images/desc/pc71-1x.jpg 1x , ./images/desc/pc71@2x.jpg 2x" 
+                            media="(min-width: 1158px)" />
+                            <img src="./images/desc/pc71-1x.jpg" alt="pc" />
+                        </picture>
                     </li>
                     <li >
-                        <img src="./images/phone_layers.jpg" alt="mobile_program" width="360">
+                        <picture>
+                            <source 
+                            srcset="./images/desc/phone-layers.jpg 1x, ./images/desc/phone-layers2x.jpg 2x"
+                             media="(min-width: 1158px)" />
+                            <img src="./images/phone_layers.jpg" alt="mobile_program" />
+                        </picture>
+                       
                     </li>
                     <li >
-                        <img src="./images/phone.jpg" alt="phone_prohr_design" width="360">
+                        <picture>
+                            <source 
+                            srcset="./images/desc/phone-last.jpg 1x, ./images/desc/phone-last71@2x.jpg 2x" 
+                            media="(min-width: 1158px)"  />
+                            <img src="./images/desc/phone-last.jpg" alt="pc" />
+                        </picture>
+                        <!-- <img src="./images/phone.jpg" alt="phone_prohr_design" width="360"> -->
                     </li>
                 </ul>
             </div>
@@ -143,7 +223,12 @@
                     <h2 class="section-team-title">Our Team</h2>
                     <ul class="section-team-list list">
                         <li class="section-team-card">
-                            <img src="./images/markguerrero.jpg" alt="Mark_Guerrero" width="264" height="260">
+                            <picture>
+                                <source 
+                                srcset="./images/mobile/img_1-phone.jpg 1x, ./images/mobile/img_1-2x.jpg 2x" media="(min-width: 320px)" sizes="264" >
+                                <img src="./images/mobile/img_1-phone.jpg" alt="workers" />
+                            </picture>
+                            
                           <div class="section-team-wrapper">
                               <h3 class="list-title">Mark Guerrero</h3>
                               <p class="list-about">Product Designer</p>
@@ -181,7 +266,11 @@
                             
                         </li>
                         <li class="section-team-card">
-                            <img src="./images/tom.jpg" alt="Tom_Ford" width="264" height="260">
+                            <picture>
+                                <source 
+                                srcset="./images/mobile/img_2-Phone.jpg 1x, ./images/mobile/img_2-Phone@2x.jpg 2x" media="(min-width: 320px)" sizes="264" >
+                                <img src="./images/mobile/img_2-Phone.jpg" alt="workers" />
+                            </picture>
                             <div class="section-team-wrapper">
                                 <h3 class="list-title">Tom Ford</h3>
                                 <p class="list-about">Frontend Developer</p>
@@ -219,7 +308,11 @@
                            
                         </li>
                         <li class="section-team-card">
-                            <img src="./images/camila.jpg" alt="Camila_Garcia" width="264" height="260">
+                            <picture>
+                                <source 
+                                srcset="./images/mobile/img_3-phone.jpg 1x, ./images/mobile/img_3-phone@2x.jpg 2x" media="(min-width: 320px)" sizes="264" >
+                                <img src="./images/mobile/img_3-phone.jpg" alt="workers" />
+                            </picture>
                             <div class="section-team-wrapper">
                                 <h3 class="list-title">Camila Garcia</h3>
                                 <p class="list-about">Marketing</p>
@@ -257,7 +350,11 @@
                            
                         </li>
                         <li class="section-team-card">
-                            <img src="./images/daniel.jpg" alt="Daniel_Wilson" width="264" height="260">
+                            <picture>
+                                <source 
+                                srcset="./images/mobile/img_4-phone.jpg 1x, ./images/mobile/img_4-phone@2x.jpg 2x" media="(min-width: 320px)" sizes="264" >
+                                <img src="./images/mobile/img_4-phone.jpg" alt="workers" />
+                            </picture>
                             <div class="section-team-wrapper">
                                 <h3 class="list-title">Daniel Wilson</h3>
                                 <p class="list-about">UI Designer</p>
@@ -436,7 +533,7 @@
 
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-button" type="button" data-modal-close>
                 <svg class="close-button-icon" width="8" height="8" >
@@ -483,7 +580,7 @@
 
             </form>
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>
