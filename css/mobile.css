@@ -94,6 +94,10 @@ img {
   z-index: 100;
   padding: 80px 40px 40px 40px;
   box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.mobile-menu::-webkit-scrollbar {
+  display: none;
 }
 .mobile-container{
   height: 100%;
